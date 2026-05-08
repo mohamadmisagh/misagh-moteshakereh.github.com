@@ -47,9 +47,10 @@
     .tag.orange{background:#fef3e2;color:#d68910}
     .bio-text{font-size:.93rem;line-height:1.85;color:var(--text);margin-bottom:24px}
     .photos-grid{display:flex;gap:12px;flex-wrap:wrap;margin:16px 0}
-    .photos-grid img{width:calc(50% - 6px);border-radius:var(--radius);object-fit:cover;box-shadow:var(--shadow);max-height:210px}
+    .photos-grid img{width:calc(50% - 6px);border-radius:var(--radius);object-fit:cover;box-shadow:var(--shadow);height:210px;display:block}
     .photo-placeholder{width:calc(50% - 6px);min-height:120px;border-radius:var(--radius);border:2px dashed var(--border);display:flex;align-items:center;justify-content:center;color:var(--text-light);font-size:.8rem;background:#fafbfc;flex-direction:column;gap:6px}
-    .logo-placeholder{width:48px;height:48px;border-radius:10px;border:2px dashed var(--border);display:flex;align-items:center;justify-content:center;color:var(--text-light);font-size:.65rem;background:#fafbfc;flex-shrink:0;cursor:pointer;text-align:center;line-height:1.3}
+    .logo-placeholder{width:60px;height:60px;border-radius:12px;border:2px dashed var(--border);display:flex;align-items:center;justify-content:center;color:var(--text-light);font-size:.65rem;background:#fafbfc;flex-shrink:0;cursor:pointer;text-align:center;line-height:1.3}
+    .logo-img{width:60px;height:60px;border-radius:12px;object-fit:contain;background:#fff;flex-shrink:0;border:1.5px solid var(--border);box-shadow:0 2px 8px rgba(0,0,0,.10);padding:4px}
     .stats-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:14px;margin:18px 0}
     .stat-card{background:var(--white);border:1px solid var(--border);border-radius:var(--radius);padding:18px 14px;text-align:center;box-shadow:var(--shadow)}
     .stat-num{font-size:2.2rem;font-weight:700;color:var(--primary)}
@@ -65,7 +66,7 @@
     .pub-num{font-size:.75rem;background:var(--primary);color:#fff;padding:2px 8px;border-radius:11px}
     .doi-link{font-size:.78rem;color:var(--primary-light);text-decoration:none;display:inline-flex;align-items:center;gap:4px;margin-top:6px}
     .doi-link:hover{text-decoration:underline}
-    .edu-row{display:flex;gap:16px;align-items:flex-start}
+    .edu-row{display:flex;gap:16px;align-items:center}
     .edu-icon{width:42px;height:42px;border-radius:9px;flex-shrink:0;background:linear-gradient(135deg,var(--primary),var(--primary-light));display:flex;align-items:center;justify-content:center;color:#fff;font-size:1rem}
     .skills-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}
     .skill-cat{background:var(--white);border:1px solid var(--border);border-radius:var(--radius);padding:18px 20px;box-shadow:var(--shadow)}
@@ -135,10 +136,8 @@
         I'm passionate about pursuing postdoctoral opportunities and am open to expanding into diverse fields such as AI.
       </p>
       <div class="photos-grid">
-        <!-- <img src="YOUR_PHOTO_1.jpg" alt="Description"> -->
-        <!-- <img src="YOUR_PHOTO_2.jpg" alt="Description"> -->
-        <div class="photo-placeholder"><i class="fa-regular fa-image" style="font-size:1.4rem"></i><span>Add photo here</span></div>
-        <div class="photo-placeholder"><i class="fa-regular fa-image" style="font-size:1.4rem"></i><span>Add photo here</span></div>
+        <img src="about1.jpg" alt="Seyed Mohammadmisagh Moteshakereh presenting" loading="lazy">
+        <img src="about2.jpg" alt="Seyed Mohammadmisagh Moteshakereh in clinical setting" loading="lazy">
       </div>
 
       <h2 class="sec-title" style="margin-top:32px"><i class="fa-solid fa-graduation-cap"></i> Background</h2>
@@ -147,7 +146,7 @@
       <div class="card">
         <div class="edu-row">
           <!-- LOGO: replace logo-placeholder div with: <img src="sbums_logo.png" style="width:48px;height:48px;border-radius:10px;object-fit:contain"> -->
-          <img src="shahid-beheshti.png" alt="Shahid Beheshti University" style="width:48px;height:48px;border-radius:10px;object-fit:contain;background:#fff;padding:2px;border:1px solid #ddd">
+          <img src="shahid-beheshti.png" alt="Shahid Beheshti University" class="logo-img">
           <div>
             <div class="card-title">Doctor of Medicine (M.D.)</div>
             <div class="card-sub">Shahid Beheshti University of Medical Sciences, Tehran, Iran</div>
@@ -159,7 +158,7 @@
       <h3 class="sub-title"><i class="fa-solid fa-microscope"></i> Research Experience</h3>
       <div class="card">
         <div class="edu-row">
-          <img src="akhtar.png" alt="Akhtar Hospital" style="width:48px;height:48px;border-radius:10px;object-fit:contain;background:#fff;padding:2px;border:1px solid #ddd">
+          <img src="akhtar.png" alt="Akhtar Hospital" class="logo-img">
           <div>
             <div class="card-title">Bone, Joint and Related Tissue Research Center</div>
             <div class="card-sub">Akhtar Orthopedic Hospital, Shahid Beheshti University of Medical Sciences, Tehran, Iran</div>
@@ -169,7 +168,7 @@
       </div>
       <div class="card">
         <div class="edu-row">
-          <img src="leiden.png" alt="Neuroscience Research Center" style="width:48px;height:48px;border-radius:10px;object-fit:contain;background:#fff;padding:2px;border:1px solid #ddd">
+          <img src="leiden.png" alt="Neuroscience Research Center" class="logo-img">
           <div>
             <div class="card-title">Neuroscience Research Center</div>
             <div class="card-sub">Shahid Beheshti University of Medical Sciences, Tehran, Iran</div>
@@ -194,7 +193,7 @@
       <div class="card">
         <div class="edu-row">
           <!-- LOGO: replace logo-placeholder with Arthroscopy journal logo -->
-          <img src="arthroscopy.png" alt="Arthroscopy Journal" style="width:48px;height:48px;border-radius:10px;object-fit:contain;background:#fff;padding:2px;border:1px solid #ddd">
+          <img src="arthroscopy.png" alt="Arthroscopy Journal" class="logo-img">
           <div>
             <div class="card-title">Arthroscopy: The Journal of Arthroscopic and Related Surgery</div>
             <div class="card-sub">Peer Reviewer</div>
@@ -478,7 +477,7 @@
       <h2 class="sec-title"><i class="fa-solid fa-handshake"></i> Academic Collaborations &amp; Reviewer Experience</h2>
       <div class="card">
         <div class="edu-row">
-          <img src="marshall.png" alt="Marshall University" style="width:48px;height:48px;border-radius:10px;object-fit:contain;background:#fff;padding:2px;border:1px solid #ddd">
+          <img src="marshall.png" alt="Marshall University" class="logo-img">
           <div>
             <div class="card-title">Marshall University</div>
             <div class="card-sub">Orthopedic Department</div>
@@ -489,7 +488,7 @@
       </div>
       <div class="card">
         <div class="edu-row">
-          <img src="arthroscopy.png" alt="Arthroscopy Journal" style="width:48px;height:48px;border-radius:10px;object-fit:contain;background:#fff;padding:2px;border:1px solid #ddd">
+          <img src="arthroscopy.png" alt="Arthroscopy Journal" class="logo-img">
           <div>
             <div class="card-title">Arthroscopy: The Journal of Arthroscopic and Related Surgery</div>
             <div class="card-sub">Peer Reviewer</div>
@@ -501,7 +500,7 @@
       </div>
       <div class="card">
         <div class="edu-row">
-          <img src="akhtar.png" alt="Akhtar Hospital" style="width:48px;height:48px;border-radius:10px;object-fit:contain;background:#fff;padding:2px;border:1px solid #ddd">
+          <img src="akhtar.png" alt="Akhtar Hospital" class="logo-img">
           <div>
             <div class="card-title">Bone, Joint and Related Tissue Research Center</div>
             <div class="card-sub">Akhtar Orthopedic Hospital, Shahid Beheshti University of Medical Sciences, Tehran, Iran</div>
@@ -512,7 +511,7 @@
       </div>
       <div class="card">
         <div class="edu-row">
-          <img src="leiden.png" alt="Neuroscience Research Center" style="width:48px;height:48px;border-radius:10px;object-fit:contain;background:#fff;padding:2px;border:1px solid #ddd">
+          <img src="leiden.png" alt="Neuroscience Research Center" class="logo-img">
           <div>
             <div class="card-title">Neuroscience Research Center</div>
             <div class="card-sub">Shahid Beheshti University of Medical Sciences, Tehran, Iran</div>
@@ -528,7 +527,7 @@
       <h2 class="sec-title"><i class="fa-solid fa-chalkboard-user"></i> Conferences &amp; Presentations</h2>
       <div class="card">
         <div class="conf-header" style="display:flex;align-items:center;gap:12px;margin-bottom:8px">
-          <img src="ins.png" alt="INS Logo" style="width:52px;height:52px;border-radius:10px;object-fit:contain;background:#fff;padding:2px;border:1px solid #ddd">
+          <img src="ins.png" alt="INS Logo" class="logo-img">
           <div class="card-title" style="margin:0">International Neuromodulation Society Congress</div>
         </div>
         <div class="card-sub"><span class="conf-venue">Poster Presentation</span></div>
@@ -536,15 +535,13 @@
         <div class="card-body">Poster presentation at the International Neuromodulation Society annual congress.</div>
         <div class="card-tags"><span class="tag">Poster</span><span class="tag green">International</span></div>
         <div class="photos-grid" style="margin-top:12px">
-          <!-- <img src="ins_photo1.jpg" alt="INS Conference"> -->
-          <!-- <img src="ins_photo2.jpg" alt="INS Conference"> -->
-          <div class="photo-placeholder"><i class="fa-regular fa-image" style="font-size:1.2rem"></i><span>Add photo</span></div>
-          <div class="photo-placeholder"><i class="fa-regular fa-image" style="font-size:1.2rem"></i><span>Add photo</span></div>
+          <img src="ins1.jpg" alt="INS Conference 2024 - Vancouver" loading="lazy">
+          <img src="ins2.jpg" alt="INS Conference 2024 - Poster Presentation" loading="lazy">
         </div>
       </div>
       <div class="card">
         <div class="conf-header" style="display:flex;align-items:center;gap:12px;margin-bottom:8px">
-          <img src="limsc.png" alt="LIMSC Logo" style="width:52px;height:52px;border-radius:10px;object-fit:contain;background:#fff;padding:2px;border:1px solid #ddd">
+          <img src="limsc.png" alt="LIMSC Logo" class="logo-img">
           <div class="card-title" style="margin:0">Leiden International (Bio)Medical Student Conference</div>
         </div>
         <div class="card-sub"><span class="conf-venue">Oral Presentation</span></div>
