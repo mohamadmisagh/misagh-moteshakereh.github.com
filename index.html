@@ -115,7 +115,10 @@ h2.sec-title{font-size:1.1rem}
     #theme-btn{background:none;border:none;cursor:pointer;padding:6px 10px;border-radius:8px;font-size:1.15rem;color:var(--text-light);transition:all .2s;display:flex;align-items:center}
     #theme-btn:hover{background:#eaf3fb;color:var(--primary)}
     body.dark #theme-btn:hover{background:#1e3a52}
-  </style>
+  
+.photo-frame{width:calc(50% - 6px);height:210px;border-radius:var(--radius);overflow:hidden;flex-shrink:0;box-shadow:var(--shadow);background:#000}
+.photo-frame img{width:100%;height:100%;object-fit:cover;object-position:center;transform:scale(1.18);transform-origin:center center;display:block}
+</style>
 </head><body>
 <nav>
   <span class="nav-brand">Seyed Mohammadmisagh Moteshakereh, MD</span>
@@ -563,8 +566,8 @@ h2.sec-title{font-size:1.1rem}
         <div class="photos-grid" style="margin-top:12px">
           <img src="ins1.jpg" alt="INS Conference 2024 - Vancouver" loading="lazy">
           <img src="ins2.jpg" alt="INS Conference 2024 - Poster Presentation" loading="lazy">
-          <img src="ins3.jpg" alt="INS 2024 - Group photo on stage" loading="lazy">
-          <img src="ins4.jpg" alt="INS 2024 - Poster presentation" loading="lazy">
+          <div class="photo-frame"><img src="ins3.jpg" alt="INS 2024 - Group photo on stage" loading="lazy"></div>
+          <div class="photo-frame"><img src="ins4.jpg" alt="INS 2024 - Poster presentation" loading="lazy"></div>
         </div>
       </div>
       <div class="card">
@@ -579,8 +582,8 @@ h2.sec-title{font-size:1.1rem}
         <div class="photos-grid" style="margin-top:12px">
           <!-- <img src="leiden_photo1.jpg" alt="Leiden Conference"> -->
           <!-- <img src="leiden_photo2.jpg" alt="Leiden Conference"> -->
-          <img src="limsc1.jpg" alt="LIMSC 2023 - Oral presentation" loading="lazy">
-          <img src="limsc2.jpg" alt="LIMSC 2023 - Leiden University lab group" loading="lazy">
+          <div class="photo-frame"><img src="limsc1.jpg" alt="LIMSC 2023 - Oral presentation" loading="lazy"></div>
+          <div class="photo-frame"><img src="limsc2.jpg" alt="LIMSC 2023 - Leiden University lab group" loading="lazy"></div>
         </div>
       </div>
     </section>
