@@ -130,7 +130,7 @@ h2.sec-title{font-size:1.1rem}
     <a href="#" onclick="return showSection('conferences',this)"><i class="fa-solid fa-chalkboard-user"></i> Conferences</a>
     <a href="#" onclick="return showSection('contact',this)"><i class="fa-solid fa-envelope"></i> Contact</a>
   </div>
-  <button id="theme-btn" onclick="toggleTheme()" title="Toggle dark/light mode">🌙</button>
+  <button id="theme-btn" onclick="toggleTheme()" title="Toggle dark/light mode">ð</button>
 </nav>
 <div class="layout">
   <aside>
@@ -153,7 +153,13 @@ h2.sec-title{font-size:1.1rem}
     <section id="about" class="section active">
       <h2 class="sec-title"><i class="fa-solid fa-user-doctor"></i> About Me</h2>
       <p class="bio-text">
-I'm Misagh, a medical doctor with three years of clinical experience treating patients in outpatient and hospital settings. I graduated in 2022 from Shahid Beheshti University of Medical Sciences, Iran's second-ranked university. Since 2019, I've been actively engaged in clinical research and surgical projects spanning fields such as neuroscience and orthopedics, as well as broader areas including trauma, internal medicine, and other surgical specialties. I've published in prestigious journals — most notably <em>Arthroscopy</em> and <em>JBJS</em> — and serve as a peer reviewer for <em>Arthroscopy</em>. I have presented my work at several internationally recognized congresses, including LIMSC and INS. My skillset encompasses scientific writing, statistical data analysis (SPSS, Stata), and laboratory/animal research competencies. I maintain active remote collaborations with institutions such as Marshall University, and am currently based in Canada on a work permit. I'm passionate about pursuing postdoctoral opportunities and am enthusiastic about broadening my expertise into diverse and emerging fields, including AI.
+🔅 Medicine, for me, has never been solely a profession — it is a lens through which I continuously question, learn, and grow, both scientifically and personally.<br><br>
+💡 "The more I research, the more I realize how much remains to be discovered."<br><br>
+📎 I am Misagh, an MD graduate of Shahid Beheshti University of Medical Sciences — Iran's second-ranked university (2022) — who has been immersed in clinical research since 2019.<br><br>
+📝 My research spans neuroscience, orthopedics, trauma, internal medicine, and other surgical specialties, with work published in some of the most influential peer-reviewed journals in their respective fields — including <em>Arthroscopy</em>, <em>JBJS</em>, <em>Foot &amp; Ankle International</em>, and <em>Foot and Ankle Surgery</em>, each recognized as a leading authority in its domain. I also serve as a peer reviewer for <em>Arthroscopy</em> and have presented at internationally recognized congresses, including LIMSC and INS. Additionally, several ongoing projects are currently under review at AJSM and JSES, reflecting a continuously active and expanding research pipeline.<br><br>
+📎 Years of parallel clinical and research experience have sharpened my competencies in scientific writing, and laboratory/animal research — equipping me to contribute meaningfully across both clinical and bench settings.<br><br>
+📍 Currently based in Canada on a work permit, I maintain active remote collaborations with institutions such as Marshall University, and am actively pursuing postdoctoral opportunities — with particular enthusiasm for emerging interdisciplinary fields, including AI.<br><br>
+✉️ Feel free to reach out for collaboration in international scientific projects.
 </p>
       <div class="photos-grid">
         <img src="about1.jpg" alt="Seyed Mohammadmisagh Moteshakereh presenting" loading="lazy">
@@ -607,13 +613,13 @@ I'm Misagh, a medical doctor with three years of clinical experience treating pa
   function toggleTheme(){
     document.body.classList.toggle('dark');
     var btn=document.getElementById('theme-btn');
-    btn.textContent=document.body.classList.contains('dark')?'☀️':'🌙';
+    btn.textContent=document.body.classList.contains('dark')?'âï¸':'ð';
     localStorage.setItem('theme',document.body.classList.contains('dark')?'dark':'light');
   }
   (function(){
     if(localStorage.getItem('theme')==='dark'){
       document.body.classList.add('dark');
-      setTimeout(function(){var b=document.getElementById('theme-btn');if(b)b.textContent='☀️';},100);
+      setTimeout(function(){var b=document.getElementById('theme-btn');if(b)b.textContent='âï¸';},100);
     }
   })();
   function showSection(id,el){
