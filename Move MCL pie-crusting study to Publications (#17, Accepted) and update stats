@@ -263,8 +263,8 @@ h2.sec-title{font-size:1.1rem}
 
       <h3 class="sub-title"><i class="fa-solid fa-chart-bar"></i> Academic Achievements</h3>
       <div class="stats-grid">
-        <div class="stat-card"><div class="stat-num">16</div><div class="stat-label">Publications</div></div>
-        <div class="stat-card"><div class="stat-num">4</div><div class="stat-label">Submitted Projects</div></div>
+        <div class="stat-card"><div class="stat-num">17</div><div class="stat-label">Publications</div></div>
+        <div class="stat-card"><div class="stat-num">3</div><div class="stat-label">Submitted Projects</div></div>
         <div class="stat-card"><div class="stat-num">4</div><div class="stat-label">Ongoing Projects</div></div>
         <div class="stat-card"><div class="stat-num">2</div><div class="stat-label">Conferences</div></div>
         <div class="stat-card"><div class="stat-num">1</div><div class="stat-label">Reviewer</div></div>
@@ -337,6 +337,11 @@ h2.sec-title{font-size:1.1rem}
         <div class="card-sub">Iranian Journal of Surgery</div>
         <a class="doi-link" href="https://ijs.ir/article_731073.html" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> https://ijs.ir/article_731073.html</a>
       </div>
+      <div class="card">
+        <div class="pub-header"><span class="pub-num">#17</span><span class="tag green">AJSM</span><span class="tag" style="background:#e8f5e9;color:#2e7d32">Accepted</span></div>
+        <div class="card-title">Does Pie-crusting the MCL have adverse biomechanical effects on meniscal function? A biomechanical study</div>
+        <div class="card-sub">AJSM (American Journal of Sports Medicine)</div>
+      </div>
       <!-- NEUROSCIENCE GROUP -->
       <div class="section-divider"><i class="fa-solid fa-brain"></i> Neuroscience</div>
 
@@ -408,11 +413,6 @@ h2.sec-title{font-size:1.1rem}
         <div class="pub-header"><span class="pub-num">S3</span><span class="tag orange">Under Review</span></div>
         <div class="card-title">Outcomes After Open Bankart Repair and Capsulorrhaphy for Recurrent Anterior Shoulder Instability - A long term follow up study</div>
         <div class="card-sub">JSES (Journal of Shoulder and Elbow Surgery)</div>
-      </div>
-      <div class="card">
-        <div class="pub-header"><span class="pub-num">S4</span><span class="tag orange">Under Review</span></div>
-        <div class="card-title">Does Pie-crusting the MCL have adverse biomechanical effects on meniscal function? A biomechanical study</div>
-        <div class="card-sub">AJSM (American Journal of Sports Medicine)</div>
       </div>
 
       <!-- ONGOING -->
